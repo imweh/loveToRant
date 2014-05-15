@@ -65,8 +65,7 @@ if (preg_match('/^.{1,128}\b/s', $rantBody, $match)) // 128 chars max plus ...re
 						<?php
 						}
 					?>
-		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-		<script type="text/javascript" src="js/common.js"></script>
+
 		
 	<script type="text/javascript">
 			$(document).ready(function() {
@@ -75,9 +74,7 @@ if (preg_match('/^.{1,128}\b/s', $rantBody, $match)) // 128 chars max plus ...re
 				});
 		</script>
 		
-		<?php
-						include("includes/analytics.inc");
-					?>
+
 	</head>
 	<body>
 		<div id="main" class="main">
@@ -335,5 +332,10 @@ $offset = ($currentpage - 1) * $rowsperpage;
 						
 						?>
 		</div>
+                <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+                <script type="text/javascript" src="js/common.js"></script>
+                <?php
+                include("includes/analytics.inc");
+                ?>
 	</body>
 </html>

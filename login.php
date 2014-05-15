@@ -49,10 +49,9 @@ if ($_SESSION['viewMobile'] == "no"){
 						}
 					?>
 
-		 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-		 <script type="text/javascript" src="js/common.js"></script>
-		 
-		 
+
+
+
 		<script type="text/javascript">
 			$(document).ready(function() {
                 var redirect;
@@ -69,13 +68,11 @@ if ($_SESSION['viewMobile'] == "no"){
 			?>
 
 				});
-		
+
 
 		</script>
-		
-		<?php
-						include("includes/analytics.inc");
-					?>
+
+
 	</head>
 	<body>
 		<div id="main" class="main">
@@ -126,5 +123,10 @@ if ($_SESSION['viewMobile'] == "no"){
 						
 						?>
 		</div>
+            <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+            <script type="text/javascript" src="js/common.js"></script>
+            <?php
+            include("includes/analytics.inc");
+            ?>
 	</body>
 </html>

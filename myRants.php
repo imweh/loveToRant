@@ -89,13 +89,10 @@ if ($_SESSION['viewMobile'] == "no"){
 						}
 					?>
 		
-		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-		<script type="text/javascript" src="js/common.js"></script>
+
 	
 
-		<?php
-						include("includes/analytics.inc");
-					?>
+
 	</head>
 	
 	
@@ -244,6 +241,11 @@ $offset = ($currentpage - 1) * $rowsperpage;
 						
 						?>
 		</div>
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <?php
+        include("includes/analytics.inc");
+        ?>
 	</body>
 	
 </html>

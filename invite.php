@@ -50,54 +50,9 @@ if ($_SESSION['viewMobile'] == "no"){
 						<?php
 						}
 					?>
-		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-		<script type="text/javascript" src="js/common.js"></script>
-		<script type="text/javascript">
-		/*
-		function register(){
-			
-			myfName = document.getElementById('fName').value;
-			mylName = document.getElementById('lName').value;
-			myPenName = document.getElementById('penName').value;
-			myEmail = document.getElementById('email').value;
-			myPassword = document.getElementById('password').value;
-			confirmPassword = document.getElementById('password2').value;
-			
-			if (document.getElementById('updates').checked == true){
-			myUpdates = "yes";
-			}
-			myStatus = "active";
-			if (myPassword != confirmPassword){
-			
-				document.getElementById('registerError').innerHTML = "Passwords Must Match";
-				return false;
-			}
-			
-			
-			
-			$.post("includes/registerScript.php", {fName: myfName,
-										lName: mylName,
-										penName: myPenName,
-										email: myEmail,
-										password: myPassword,
-										updates: myUpdates,
-										status: myStatus
-		   								},
-						  function(data){
-						//  alert(data);
-						  $('#registerError').html(data);
-						
-						
-						  })	;
-			return false;
-		
-		}
-		
-		*/
-		</script>
-		<?php
-						include("includes/analytics.inc");
-					?>
+
+
+
 	</head>
 	<body>
 		<div id="main" class="main">
@@ -155,5 +110,10 @@ if ($_SESSION['viewMobile'] == "no"){
 						
 						?>
 		</div>
+            <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+            <script type="text/javascript" src="js/common.js"></script>
+            <?php
+            include("includes/analytics.inc");
+            ?>
 	</body>
 </html>
