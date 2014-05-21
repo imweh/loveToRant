@@ -46,7 +46,7 @@ if (isset($_SESSION['myUserId'])){
 		  
 			list($userId, $fName, $lName,$penName, $email, $password, $status) = mysql_fetch_row($query);
 			
-			//if password is correct and status is active set sessions vabiables and save drink to faves
+			//if password is correct and status is active set sessions varbiables
 			if($password == $myPassword && $status == "active"){
 				$_SESSION['myUserId']= $userId;
 				$_SESSION['myfName']= $fName;
